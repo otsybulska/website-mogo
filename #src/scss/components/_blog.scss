@@ -1,0 +1,98 @@
+.blog {
+    padding-bottom: 110px;
+    &__box {
+        position: relative;
+    }
+
+    &__body {
+        position: absolute;
+        content: "";
+        top: 65%;
+        left: -10px;
+        right: 0;
+        bottom: 0;
+        height: 70px;
+        width: 60px;
+        background-color: $blue;
+        color: $white;
+    }
+
+    &__body-number {
+        font-weight: 700;
+        font-size: 30px;
+        font-family: $font-one;
+        margin-bottom: 0;
+        padding-top: 7px;
+    }
+
+    &__body-month {
+        font-family: $font-three;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        margin-top: -10px;
+    }
+
+    &__text {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &__text-title {
+        color: $color-title;
+        font-family: $font-one;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__text-text {
+        line-height: 24px;
+        color: color-text;
+        font-family: $font-three;
+        font-size: 15px;
+    }
+
+    &__stat {
+        padding-left: 0;
+        padding-top: 15px;
+        color: $blue;
+        li {
+            display: inline;
+            list-style-type: none;
+            a {
+                color: $blue;
+            }
+            i {
+                font-size: 16px;
+            }
+        }
+        li:nth-child(3) {
+            padding-left: 10px;
+        }
+    }
+
+    &__stat-p {
+        color: $color-text;
+        font-family: $font-three;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: italic;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog {
+        padding-bottom: 45px;
+        &__stat {
+            padding-bottom: 45px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-body {
+        top: 55%;
+    }
+}

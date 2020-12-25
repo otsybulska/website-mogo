@@ -1,0 +1,36 @@
+.map {
+    background: url("../assets/img/map.png") center center no-repeat;
+    background-size: cover;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.map {
+    color: $accent;
+    font-family: $font-one;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.map p {
+    padding-top: 5px;
+}
+
+.map p:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: $accent;
+    margin: 15px auto;
+}
+
+.map a {
+    color: $accent;
+    text-decoration: none;
+}
+
+.map i {
+    font-size: 40px;
+}

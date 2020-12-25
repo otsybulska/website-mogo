@@ -1,0 +1,15 @@
+.design {
+    background-size: cover;
+    background-position: center;
+    &__body {
+        position: relative;
+        img {
+            top: -50px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            margin-bottom: -53px;
+        }
+    }
+}

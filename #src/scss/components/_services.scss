@@ -1,0 +1,47 @@
+.services {
+    padding-bottom: 110px;
+}
+
+.services-box i {
+    color: $blue;
+    font-size: 25px;
+}
+
+.services-title-top {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+.services-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.services-subtitle {
+    font-size: 15px;
+}
+
+.row-line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .services {
+        padding-bottom: 45px;
+    }
+    .services-box {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .row-line {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}

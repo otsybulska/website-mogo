@@ -1,0 +1,58 @@
+.btn-custom {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border: 2px solid $white;
+    border-radius: 0;
+    background-color: transparent;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+    outline: transparent;
+    background: $white;
+    color: $orange;
+}
+
+/*
+.btn-info {
+    border-radius: 0;
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+    border-width: 2px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: auto;
+    height: 40px;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info.focus {
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    border-color: blue;
+}
+
+.btn-info:active:focus, .btn-info:active.focus {
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+}
+
+.btn-info.active:focus, .btn-info.active.focus {
+    outline: none;
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+}
+*/

@@ -1,0 +1,38 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/bootstrap/dist/css/bootstrap";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+@import "_mixin";
+
+@import "_fonts";
+
+@import "_variables";
+
+@import "_global";
+
+@import "_preloader-backtop";
+
+//Carousel
+//@import "carousel/slick.scss";
+//@import "carousel/slick-theme.scss";
+
+@import "./components/_header";
+@import "./components/_hero";
+@import "./components/_btn";
+//@import "./components/navbar";
+//@import "./components/icons";
+//@import "./components/block";
+//@import "./components/about";
+//@import "./components/stats";
+//@import "./components/services";
+//@import "./components/design";
+//@import "./components/service";
+//@import "./components/quote1";
+//@import "./components/team";
+//@import "./components/logo";
+//@import "./components/work";
+//@import "./components/quote2";
+//@import "./components/people";
+//@import "./components/map";
+//@import "./components/blog";
+//@import "./components/footer";

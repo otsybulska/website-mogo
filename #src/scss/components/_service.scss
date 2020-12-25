@@ -1,0 +1,71 @@
+#service {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+.service-img img {
+    width: 100%;
+}
+
+.panel-default > .panel-heading {
+    background-color: $white;
+}
+
+.panel-heading {
+    margin-bottom: 8px;
+}
+
+.panel-heading a {
+    text-decoration: none;
+}
+
+.accordion-img:before {
+    font-family: fontello;
+    float: left;
+    color: $blue;
+    font-size: 25px;
+    margin-top: -5px;
+}
+
+.accordion-img-1:before {
+    content: '\e809';
+}
+
+.accordion-img-2:before {
+    content: '\e815';
+}
+
+.accordion-img-3:before {
+    content: '\e816';
+}
+
+.accordion-text {
+    font-family: $font-one;
+    color: $color-title;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-weight: 600;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    padding-bottom: 10px;
+}
+
+.panel-body {
+    font-family: $font-three;
+    color: $color-text;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .service {
+        padding-bottom: 45px;
+    }
+    .service-img {
+        padding-bottom: 15px;
+    }
+}
