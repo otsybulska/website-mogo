@@ -1,0 +1,30 @@
+.block
+  padding: 90px 90px
+.block-title
+  font-family: $font-two
+  color: $color-title
+  font-size: 24px
+.block-subtitle
+  font-family: $font-one
+  text-transform: uppercase
+  color: $color-title
+  font-size: 30px
+  font-weight: 700
+  &:after
+    display: block
+    content: ""
+    height: 3px
+    width: 60px
+    margin: 40px auto
+    background-color: $accent
+.block-text
+  font-family: $font-three
+  color: $color-text
+  font-size: 15px
+  line-height: 24px
+
+@media (max-width: 767px)
+  .block
+    padding: 45px 0
+  .block-subtitle
+    font-size: 30px
