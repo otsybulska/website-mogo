@@ -50,6 +50,7 @@
         "gulp-ttf2woff2": "^3.0.0",
         "gulp-uglify-es": "^2.0.0",
         "gulp-w3c-html-validator": "^2.0.1",
+        "jquery": "^3.5.1",
         "stylelint": "^13.8.0",
         "stylelint-config-htmlacademy": "^0.1.4",
         "stylelint-config-standard": "^20.0.0",

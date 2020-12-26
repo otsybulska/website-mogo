@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize";
+//@import "../../node_modules/normalize.css/normalize";
 @import "../../node_modules/bootstrap/dist/css/bootstrap";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 
@@ -16,13 +16,12 @@
 //@import "carousel/slick.scss";
 //@import "carousel/slick-theme.scss";
 
+@import "./components/_btn";
 @import "./components/_header";
 @import "./components/_hero";
-@import "./components/_btn";
-//@import "./components/navbar";
+@import "./components/_block";
+@import "./components/_about";
 //@import "./components/icons";
-//@import "./components/block";
-//@import "./components/about";
 //@import "./components/stats";
 //@import "./components/services";
 //@import "./components/design";
