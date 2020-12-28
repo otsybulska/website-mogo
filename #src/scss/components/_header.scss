@@ -1,6 +1,6 @@
 .navbar {
+    padding: 0 1rem;
     color: $white;
-    background-color: $accent;
     z-index: 100;
     a {
         transition: all 0.3s ease-in-out;
@@ -20,6 +20,7 @@
 
 .nav-item {
     padding: 0 10px;
+    margin-top: 10px;
     a {
         margin: 0 20px;
         text-transform: uppercase;
@@ -48,8 +49,15 @@
 }
 
 @include m("tp") {
+    .navbar {
+        background-color: $accent;
+    }
+
     .navbar-brand {
         margin-left: -10px;
         padding: 15px;
+    }
+    .nav-item {
+        margin-top: 0;
     }
 }

@@ -1,38 +1,39 @@
 section#service.service
     .container
-    .text-center
         .block
-        p.block-title Service
-        h3.block-subtitle What we do
-        p.block-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-    .row
-        .col-sm-6
-        .service-img
-            img(src='img/service.png' alt='service')
-        .col-sm-6
-        #accordion.panel-group
-            .panel.panel-default
-            .panel-heading.accordion-img.accordion-img-1
-                h4.panel-title
-                a(data-toggle='collapse' data-parent='#accordion' href='#collapseOne')
-                    span.accordion-text Photography
-            #collapseOne.panel-collapse.collapse.in
-                .panel-body
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            .panel.panel-default
-            .panel-heading.accordion-img.accordion-img-2
-                h4.panel-title
-                a(data-toggle='collapse' data-parent='#accordion' href='#collapseTwo')
-                    span.accordion-text Creativity
-            #collapseTwo.panel-collapse.collapse
-                .panel-body
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            .panel.panel-default
-            .panel-heading.accordion-img.accordion-img-3
-                h4.panel-title
-                a(data-toggle='collapse' data-parent='#accordion' href='#collapseThree')
-                    span.accordion-text Web design
-            #collapseThree.panel-collapse.collapse
-                .panel-body
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            p.block__title Service
+            h3.block__subtitle What we do
+            p.block__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        .row
+            .col-md-6
+                .service__img
+                    img(src='./assets/img/service.png' alt='service')
+            .col-md-6
+                #accordionExample.accordion
+                    .card
+                        #headingOne.card-header
+                            h4.mb-0
+                                button.btn.btn-link.btn-block.text-left(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                                    svg
+                                        use(xlink:href='./assets/icons/sprite.svg#images-solid')
+                                    span Photography
+                        #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                            .card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .card
+                        #headingTwo.card-header
+                            h4.mb-0
+                                button.btn.btn-link.btn-block.text-left(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='true' aria-controls='collapseTwo') 
+                                    svg
+                                        use(xlink:href='./assets/icons/sprite.svg#palette-solid')
+                                    span Creativity
+                        #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                            .card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .card
+                        #headingThree.card-header
+                            h4.mb-0
+                                button.btn.btn-link.btn-block.text-left(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='true' aria-controls='collapseThree')
+                                    svg
+                                        use(xlink:href='./assets/icons/sprite.svg#swatchbook-solid')
+                                    span Web design
+                        #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                            .card-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

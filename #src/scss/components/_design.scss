@@ -1,15 +1,10 @@
 .design {
-    background-size: cover;
-    background-position: center;
-    &__body {
+    max-height: 921px;
+    @include bg;
+    &__img {
         position: relative;
         img {
-            top: -50px;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            margin-bottom: -53px;
+            margin: 0 auto;
         }
     }
 }

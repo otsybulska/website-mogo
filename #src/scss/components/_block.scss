@@ -1,45 +1,37 @@
 .block {
-    padding: 90px 90px;
+    padding: 90px 0;
+    color: $color-title;
+    text-align: center;
 
-    // .block__title
     &__title {
+        margin-bottom: 5px;
         font-family: $font-two;
-        color: $color-title;
         font-size: 24px;
     }
 
-    // .block__subtitle
     &__subtitle {
         font-family: $font-one;
-        text-transform: uppercase;
-        color: $color-title;
         font-size: 30px;
         font-weight: 700;
+        text-transform: uppercase;
         &:after {
             display: block;
             content: "";
             height: 3px;
             width: 60px;
-            margin: 40px auto;
+            margin: 35px auto 40px;
             background-color: $accent;
         }
     }
 
-    // .block__text
     &__text {
         font-family: $font-three;
         color: $color-text;
-        font-size: 15px;
-        line-height: 24px;
     }
 }
 
-@media (max-width: 767px) {
+@include m("sl") {
     .block {
-        padding: 45px 0;
-        
-        &__subtitle {
-            font-size: 30px;
-        }
+        padding: 60px 0;
     }
 }

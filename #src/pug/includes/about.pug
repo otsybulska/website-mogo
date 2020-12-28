@@ -1,28 +1,28 @@
 section#about.about
-    .container.text-center
+    .container
         .block
-            p.block-title What we do
-            h3.block-subtitle Story about us
-            p.block-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            p.block__title What we do
+            h3.block__subtitle Story about us
+            p.block__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
         .row
             .col-sm-4
-                .about-box
-                    .about-img
-                        img(src='img/about1.png' alt='about1')
-                    .about-body
-                        //i.icon-users
-                        p.about-icon-text Super team
+                figure.about__item
+                    img(src='/assets/img/about1.png' alt='about')
+                    .about__text
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#user-regular')
+                        p.about__icon-text Super team
             .col-sm-4
-                .about-box
-                    .about-img
-                        img(src='img/about2.png' alt='about2')
-                    .about-body
-                        //i.icon-users
-                        p.about-icon-text Super team
+                figure.about__item
+                    img(src='/assets/img/about2.png' alt='about')
+                    .about__text
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#user-regular')
+                        p.about__icon-text Super team
             .col-sm-4
-                .about-box
-                    .about-img
-                        img(src='img/about3.png' alt='about3')
-                    .about-body
-                        //i.icon-users
-                        p.about-icon-text Super team
+                figure.about__item
+                    img(src='./assets/img/about3.png' alt='about')
+                    .about__text
+                        svg
+                            use(xlink:href='/assets/icons/sprite.svg#user-regular')
+                        p.about__icon-text Super team

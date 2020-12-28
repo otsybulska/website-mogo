@@ -1,21 +1,33 @@
-.quote2
+.quote2.quote
     .container
-    .carousel
-        .quote-box.item
-        .row
-            .col-sm-offset-2
-            .col-sm-3.col-md-2
-                img(src='img/quote2.png' alt='quote2')
-            .col-sm-8.col-md-9.quote-text-box
-                p.quote-text
-                | &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&rdquo;
-                p.quote-author Joshua Earle
-        .quote-box.item
-        .row
-            .col-sm-offset-2
-            .col-sm-3.col-md-2
-                img(src='img/quote2.png' alt='quote2')
-            .col-sm-8.col-md-9.quote-text-box
-                p.quote-text
-                | &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&rdquo;
-                p.quote-author Joshua Earle
+        #carouselExampleControls.carousel.slide(data-ride='carousel')
+            .carousel-inner
+                .carousel-item.active
+                    .row
+                        .col-12.col-md-3
+                            img(src='./assets/img/quote2.png' alt='quote')
+                        .col-12.col-md-9
+                            p.quote__text &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&rdquo;
+                            p.quote__author Joshua Earle
+                .carousel-item
+                    .row
+                        .col-12.col-md-3
+                            img(src='./assets/img/quote2.png' alt='quote')
+                        .col-12.col-md-9
+                            p.quote__text &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&rdquo;
+                            p.quote__author Joshua Earle
+                .carousel-item
+                    .row
+                        .col-12.col-md-3
+                            img(src='./assets/img/quote2.png' alt='quote')
+                        .col-12.col-md-9
+                            p.quote__text &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&rdquo;
+                            p.quote__author Joshua Earle
+            a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+                svg.carousel-arrows.carousel-arrows__left
+                    use(xlink:href='./assets/icons/sprite.svg#chevron-left-solid')
+                span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+                svg.carousel-arrows.carousel-arrows__right
+                    use(xlink:href='./assets/icons/sprite.svg#chevron-right-solid')
+                span.sr-only Next

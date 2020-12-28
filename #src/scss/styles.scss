@@ -1,6 +1,4 @@
-//@import "../../node_modules/normalize.css/normalize";
 @import "../../node_modules/bootstrap/dist/css/bootstrap";
-@import "../../node_modules/slick-carousel/slick/slick.scss";
 
 @import "_mixin";
 
@@ -21,16 +19,14 @@
 @import "./components/_hero";
 @import "./components/_block";
 @import "./components/_about";
-//@import "./components/icons";
-//@import "./components/stats";
-//@import "./components/services";
-//@import "./components/design";
-//@import "./components/service";
-//@import "./components/quote1";
+@import "./components/_stats";
+@import "./components/_services";
+@import "./components/_design";
+@import "./components/_service";
+@import "./components/_quote";
 //@import "./components/team";
 //@import "./components/logo";
 //@import "./components/work";
-//@import "./components/quote2";
 //@import "./components/people";
 //@import "./components/map";
 //@import "./components/blog";

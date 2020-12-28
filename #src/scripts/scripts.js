@@ -1,31 +1,9 @@
-$(document).ready(function () {
+$(function () {
+
     //Параметры карусели
-    $('.carousel').slick({
-        infinite: true,
-        prevArrow: "<i class='icon-left-open-big slick-prev pull-left' aria-hidden='true'></i>",
-        nextArrow: "<i class='icon-right-open-big slick-next pull-right' aria-hidden='true'></i>",
-        dots: false,
-        loop: true,
-        nav: true,
-        items: 1,
-        focusOnSelect: true,
-        pauseOnHover: true,
-        autoplay: true,
-        speed: 600,
-        autoplaySpeed: 4000,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    speed: 300,
-                    slidesToShow: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    arrows: false
-                }
-            }
-        ]
-    });
+    $('.carousel').carousel({
+        interval: 3000
+    })
 
     //Плавная прокрутка к якорю при нажатии на пункт меню
     $("#menu").on("click", "a", function (event) {
@@ -77,18 +55,6 @@ $(document).ready(function () {
     $(function () {
         countup("num", $(".num").text());
     });
-
-    //Сворачивание адаптивного меню при нажатии
-    // $(window).resize(function() {
-    //     if ($(window).width() < 768) {
-    //         $('.nav a').on('click.toggle-nav', function(){
-    //             $('.navbar-toggle').click()
-    //         });
-    //     }
-    //     else {
-    //         $('.nav a').off('click.toggle-nav')
-    //     }
-    // }).resize();
 });
 
 svg4everybody()

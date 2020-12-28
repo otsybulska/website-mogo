@@ -1,0 +1,110 @@
+.quote1 {
+    background: #f8f8f8;
+}
+
+.quote {
+    padding: 0 15px;
+
+    .row {
+        display: flex;
+        padding: 70px 100px;
+    }
+
+    img {
+        margin: 10px 20px 0 0;
+    }
+
+    &__text {
+        font-family: $font-three;
+        color: $color-text;
+        font-size: 22px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    &__author {
+        position: relative;
+        font-family: $font-two;
+        color: $color-title;
+        font-size: 24px;
+        padding-left: 70px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            background-color: $accent;
+            height: 3px;
+            width: 60px;
+        }
+    }
+
+    .carousel-arrows {
+        width: 35px;
+        height: 35px;
+        color: $color-text;
+        &__right {
+            margin-right: -145px;
+        }
+        &__left {
+            margin-left: -145px;
+        }
+    }
+}
+
+@include m("sl") {
+    .quote {
+        .row {
+            padding: 70px 60px;
+        }
+
+        img {
+            margin: 0 auto 20px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        .carousel-arrows {
+            &__right {
+                margin-right: -45px;
+            }
+            &__left {
+                margin-left: -45px;
+            }
+        }
+    }
+}
+
+@include m("sp") {
+    .quote {
+        .row {
+            padding: 70px 40px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__author {
+            padding-left: 40px;
+            padding-right: 0;
+            &::before {
+                width: 30px;
+            }
+        }
+    }
+
+    .quote {
+        .carousel-arrows {
+            &__right {
+                margin-right: -35px;
+            }
+            &__left {
+                margin-left: -35px;
+            }
+        }
+    }
+}
