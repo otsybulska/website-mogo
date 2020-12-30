@@ -1,57 +1,55 @@
-.team
+section.team
     .container
-    .text-center
         .block
-        p.block-title Who we are
-        h3.block-subtitle Meet our team
-        p.block-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-        .row
-        .col-sm-4
-            .team-box
-            .team-img
-                img(src='img/team1.png' alt='team1')
-            .team-body
-                a(href='#')
-                i.icon-facebook-1
-                a(href='#')
-                i.icon-twitter-3
-                a(href='#')
-                i.icon-pinterest-1
-                a(href='#')
-                i.icon-instagram-3
-            .team-text
-            p.team-name Matthew Dix
-            p.team-position Graphic Design
-        .col-sm-4
-            .team-box
-            .team-img
-                img(src='img/team2.png' alt='team2')
-            .team-body
-                a(href='#')
-                i.icon-facebook-1
-                a(href='#')
-                i.icon-twitter-3
-                a(href='#')
-                i.icon-pinterest-1
-                a(href='#')
-                i.icon-instagram-3
-            .team-text
-            p.team-name Christopher Campbell
-            p.team-position Branding/UX design
-        .col-sm-4
-            .team-box
-            .team-img
-                img(src='img/team3.png' alt='team3')
-            .team-body
-                a(href='#')
-                i.icon-facebook-1
-                a(href='#')
-                i.icon-twitter-3
-                a(href='#')
-                i.icon-pinterest-1
-                a(href='#')
-                i.icon-instagram-3
-            .team-text
-            p.team-name Michael Fertig
-            p.team-position Developer
+            p.block__title Who we are
+            h3.block__subtitle Meet our team
+            p.block__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        .row.text-center
+            .col-sm-4
+                figure
+                    .team__item
+                        img.w-100(src='./assets/img/team1.png' alt='team')
+                        ul.team__links.links
+                            li.links__item
+                                a.links__img.links__img--1(href='#' aria-label='Go to Twitter')
+                            li.links__item
+                                a.links__img.links__img--2(href='#' aria-label='Go to Facebook')
+                            li.links__item
+                                a.links__img.links__img--3(href='#' aria-label='Go to Pinterest')
+                            li.links__item
+                                a.links__img.links__img--4(href='#' aria-label='Go to Instagram')
+                .team__text
+                    p.team__name Matthew Dix
+                    p.team__position Graphic Design
+            .col-sm-4
+                figure
+                    .team__item
+                        img.w-100(src='./assets/img/team2.png' alt='team')
+                        ul.team__links.links
+                            li.links__item
+                                a.links__img.links__img--1(href='#' aria-label='Go to Facebook')
+                            li.links__item
+                                a.links__img.links__img--2(href='#' aria-label='Go to Twitter')
+                            li.links__item
+                                a.links__img.links__img--3(href='#' aria-label='Go to Pinterest')
+                            li.links__item
+                                a.links__img.links__img--4(href='#' aria-label='Go to Instagram')
+                .team__text
+                    p.team__name Chris Campbell
+                    p.team__position Branding/UX design
+            .col-sm-4
+                figure
+                    .team__item
+                        img.w-100(src='./assets/img/team3.png' alt='team')
+                        ul.team__links.links
+                            li.links__item
+                                a.links__img.links__img--1(href='#' aria-label='Go to Facebook')
+                            li.links__item
+                                a.links__img.links__img--2(href='#' aria-label='Go to Twitter')
+                            li.links__item
+                                a.links__img.links__img--3(href='#' aria-label='Go to Pinterest')
+                            li.links__item
+                                a.links__img.links__img--4(href='#' aria-label='Go to Instagram')
+                .team__text
+                    p.team__name Michael Fertig
+                    p.team__position Developer

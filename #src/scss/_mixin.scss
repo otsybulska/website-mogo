@@ -17,6 +17,12 @@
     right: $right;
 }
 
+@mixin color-layer() {
+    @include layer;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.8));
+    box-shadow: 10px 10px 0 0 #95e1d3;
+}
+
 @mixin block($width: $width, $height: $width) {
     width: $width;
     height: $height;
@@ -40,8 +46,7 @@
         @media #{inspect(map-get($breakpoints, $breakpoint))} {
             @content;
         }
-    }
-    @else {
+    } @else {
         @error "Не указано значение для `#{$breakpoint}`";
     }
 }

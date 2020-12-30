@@ -7,9 +7,7 @@
         }
 
         &::before {
-            @include layer;
-            background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.8));
-            box-shadow: 10px 10px 0 0 #95e1d3;
+            @include color-layer;
             transition: all 0.3s ease-in-out;
             opacity: 0;
             visibility: hidden;
@@ -27,7 +25,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         color: $white;
         text-align: center;
@@ -37,9 +35,13 @@
         visibility: hidden;
     }
 
-    svg {
-        width: 25px;
-        height: 40px;
+    &__icon {
+        margin: 5px auto;
+        @include bg;
+        height: 30px;
+        width: 30px;
+        background-color: $white;
+        mask-image: url(../assets/icons/sprite.svg#user-regular);
     }
 }
 
