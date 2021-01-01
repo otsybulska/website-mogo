@@ -1,36 +1,38 @@
 .map {
+    padding: 60px 0;
     background: url("../assets/img/map.png") center center no-repeat;
-    background-size: cover;
-    padding-top: 55px;
-    padding-bottom: 55px;
-}
-
-.map {
-    color: $accent;
+    @include bg;
     font-family: $font-one;
-    text-transform: uppercase;
-    font-weight: 700;
     font-size: 24px;
-}
-
-.map p {
-    padding-top: 5px;
-}
-
-.map p:after {
-    display: block;
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: $accent;
-    margin: 15px auto;
-}
-
-.map a {
     color: $accent;
-    text-decoration: none;
-}
+    font-weight: 700;
+    text-transform: uppercase;
 
-.map i {
-    font-size: 40px;
+    &__icon {
+        margin: 0 auto;
+        @include bg;
+        height: 50px;
+        width: 50px;
+        background-color: $accent;
+        mask-image: url(../assets/icons/sprite.svg#map-marker-alt-solid);
+    }
+
+    p {
+        margin-top: 10px;
+
+        &:after {
+            display: block;
+            content: "";
+            height: 3px;
+            width: 60px;
+            background-color: $accent;
+            margin: 15px auto;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-text;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }

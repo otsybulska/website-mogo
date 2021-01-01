@@ -8,6 +8,12 @@
     }
 }
 
+@mixin bg() {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @mixin layer($position: absolute, $top: 0, $left: $top, $bottom: $top, $right: $top) {
     content: "";
     position: $position;
@@ -17,10 +23,23 @@
     right: $right;
 }
 
-@mixin color-layer() {
+@mixin background-layer() {
     @include layer;
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.8));
     box-shadow: 10px 10px 0 0 #95e1d3;
+}
+
+@mixin text-title() {
+    font-family: $font-one;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@mixin text-subtitle() {
+    font-family: $font-three;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 @mixin block($width: $width, $height: $width) {
@@ -33,12 +52,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-@mixin bg() {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @mixin m($breakpoint) {

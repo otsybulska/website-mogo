@@ -21,14 +21,12 @@
 
     &__title {
         margin-bottom: 10px;
-        font-family: $font-one;
-        font-weight: 600;
+        @include text-title;
         color: $color-title;
-        text-transform: uppercase;
     }
 
     &__subtitle {
-        font-family: $font-three;
+        @include text-subtitle;
         color: $color-text;
     }
 }

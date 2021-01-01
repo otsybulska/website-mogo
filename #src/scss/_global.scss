@@ -42,7 +42,7 @@ ol {
 
 a {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
@@ -56,6 +56,6 @@ section {
     padding-bottom: 110px;
 
     @include m("sl") {
-        padding-bottom: 35px;
+        padding-bottom: 60px;
     }
 }

@@ -1,7 +1,11 @@
 $(function () {
 
     //Параметры карусели
-    $('.carousel').carousel({
+    $('#carousel1').carousel({
+        interval: 3000
+    })
+
+    $('#carousel2').carousel({
         interval: 3000
     })
 

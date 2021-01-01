@@ -10,10 +10,6 @@
 
 @import "_preloader-backtop";
 
-//Carousel
-//@import "carousel/slick.scss";
-//@import "carousel/slick-theme.scss";
-
 @import "./components/_btn";
 @import "./components/_header";
 @import "./components/_hero";
@@ -27,7 +23,7 @@
 @import "./components/_team";
 @import "./components/_logo";
 @import "./components/_work";
-//@import "./components/people";
-//@import "./components/map";
-//@import "./components/blog";
+@import "./components/_people";
+@import "./components/_blog";
+@import "./components/_map";
 //@import "./components/footer";

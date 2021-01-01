@@ -1,50 +1,35 @@
 .people {
-    background: url("../assets/img/people.png") center center no-repeat;
-    background-size: cover;
     padding-bottom: 30px;
-}
+    @include bg;
 
-.people img {
-    width: 100%;
-}
-
-.people-title {
-    font-family: $font-one;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.people-subtitle {
-    font-family: $font-three;
-    font-size: 15px;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.people-subtitle:after {
-    display: block;
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: $accent;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.people-text {
-    font-family: $font-three;
-    font-size: 15px;
-    padding-bottom: 80px;
-    margin: 0;
-    color: $color-text;
-}
-
-@media (max-width: 767px) {
-    .people-title {
-        padding-top: 10px;
+    img {
+        margin: 0 auto;
+        padding-bottom: 15px;
     }
-    .people-text {
-        padding-bottom: 45px;
+
+    &__title {
+        margin-bottom: 5px;
+        @include text-title;
+        color: $color-title;
+    }
+
+    &__subtitle {
+        @include text-subtitle;
+        color: $color-title;
+        font-style: italic;
+
+        &::after {
+            display: block;
+            content: "";
+            height: 3px;
+            width: 60px;
+            background-color: $accent;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        padding-bottom: 80px;
     }
 }
