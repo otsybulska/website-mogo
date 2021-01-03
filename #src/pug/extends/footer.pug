@@ -1,106 +1,96 @@
 #contact.footer
     .container
-    .footer-main
         .row
-        .col-sm-7.col-md-5
-            .footer-about
-            p.footer-about-title MoGo
-            p.footer-about-text
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            p.footer-about-followers
-                span 15k
-                |  followers
-            ul.footer-social-1
-                li.footer-social-p Follow Us:
-                li
-                a(href='#')
-                    i.icon-facebook-1
-                li
-                a(href='#')
-                    i.icon-twitter-3
-                li
-                a(href='#')
-                    i.icon-pinterest-1
-                li
-                a(href='#')
-                    i.icon-instagram-3
-                li
-                a(href='#')
-                    i.icon-googleplus-rect
-                li
-                a(href='#')
-                    i.icon-youtube-play
-                li
-                a(href='#')
-                    i.icon-dribbble-1
-                li
-                a(href='#')
-                    i.icon-tumblr-1
-            .footer-form
-                .input-group
-                .row
-                    .col-xs-8.form-padding-right
-                    input.form-control(type='text' placeholder='Your Email')
-                    .col-xs-4.form-padding-left
-                    span.btn.btn-info Subscribe
-        .col-sm-5.col-md-4
-            .footer-blog
-            p.footer-title Blogs
-            .row.footer-blog-box
-                .col-xs-4.footer-blog-img
-                a(href='#')
-                    img(src='img/footer-blog1.png' alt='footer-blog1')
-                .col-xs-8
-                a(href='#')
-                    p.footer-blog-title Lorem ipsum dolor sit amet, consectetur adipiscing
-                p.footer-blog-data Jan 9, 2016
-            .row.footer-blog-box
-                .col-xs-4.footer-blog-img
-                a(href='#')
-                    img(src='img/footer-blog2.png' alt='footer-blog2')
-                .col-xs-8
-                a(href='#')
-                    p.footer-blog-title Consectetur adipiscing elit, sed do eiusmod tempor
-                p.footer-blog-data Jan 12, 2016
-            .row.footer-blog-box
-                .col-xs-4.footer-blog-img
-                a(href='#')
-                    img(src='img/footer-blog3.png' alt='footer-blog3')
-                .col-xs-8
-                a(href='#')
-                    p.footer-blog-title Sed do eiusmod tempor incididunt ut labore
-                p.footer-blog-data Jan 20, 2016
-        .col-md-3
-            .footer-inst
-            p.footer-title Instagram
-            .footer-inst-box
-                .row
-                .col-xs-4.footer-inst-img
-                    .footer-inst-margin
-                    img(src='img/inst1.png' alt='inst1')
-                    .footer-inst-margin
-                    img(src='img/inst2.png' alt='inst2')
-                    .footer-inst-margin
-                    img(src='img/inst3.png' alt='inst3')
-                .col-xs-4.footer-inst-img
-                    .footer-inst-margin
-                    img(src='img/inst4.png' alt='inst4')
-                    .footer-inst-margin
-                    img(src='img/inst5.png' alt='inst5')
-                    .footer-inst-margin
-                    img(src='img/inst6.png' alt='inst6')
-                .col-xs-4.footer-inst-img
-                    .footer-inst-margin
-                    img(src='img/inst7.png' alt='inst7')
-                    .footer-inst-margin
-                    img(src='img/inst8.png' alt='inst8')
-                    .footer-inst-margin
-                    img(src='img/inst9.png' alt='inst9')
-            a(href='#')
-                p.footer-inst-text View more photos
-    .footer-copy.text-center
-        p
-        | &copy; 2018 MoGo template by 
+            .col-lg-5
+                .footer__about.footer-about
+                    p.footer-about__logo MoGo
+                    p.footer-about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    p.footer-about__followers.border-bottom.font-weight-bold 15k 
+                        span followers
+                    ul.footer-about__follow.d-flex.mb-2
+                        span.font-italic Follow Us:
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#facebook-f-brands')
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#twitter-brands')
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#pinterest-p-brands')
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#instagram-brands')
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#youtube-brands')
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#dribbble-brands')
+                        li
+                            a(href='#')
+                                svg
+                                    use(xlink:href='/assets/icons/sprite.svg#twitter-brands')
+                    .footer-about__form
+                        form.form-inline
+                            .form-group.mb-2
+                                label.sr-only(for='inputEmail') Your email
+                                input#inputEmail.form-control(type='email' placeholder='Your Email')
+                            button.btn.btn-custom.mb-2(type='submit') Subscribe
+            .col-lg-4
+                .footer__blog.footer-blog
+                    p.footer__title Blogs
+                    .row
+                        .col-4
+                            a(href='#')
+                                img(src='./assets/img/footer-blog1.png' alt='footer-blog')
+                        .col-8
+                            a(href='#')
+                                p.footer-blog__text Lorem ipsum dolor sit amet, consectetur adipiscing
+                            p.footer-blog__data Jan 9, 2020
+                    .row
+                        .col-4
+                            a(href='#')
+                                img(src='./assets/img/footer-blog2.png' alt='footer-blog')
+                        .col-8
+                            a(href='#')
+                                p.footer-blog__text Consectetur adipiscing elit, sed do eiusmod tempor
+                            p.footer-blog__data Jan 12, 2020
+                    .row
+                        .col-4
+                            a(href='#')
+                                img(src='./assets/img/footer-blog3.png' alt='footer-blog')
+                        .col-8
+                            a(href='#')
+                                p.footer-blog__text Sed do eiusmod tempor incididunt ut labore
+                            p.footer-blog__data Jan 20, 2020
+            .col-lg-3
+                .footer__inst
+                    p.footer__title Instagram
+                    .row
+                        .col-4
+                            img(src='./assets/img/inst1.png' alt='inst')
+                            img(src='./assets/img/inst2.png' alt='inst')
+                            img(src='./assets/img/inst3.png' alt='inst')
+                        .col-4
+                            img(src='./assets/img/inst4.png' alt='inst')
+                            img(src='./assets/img/inst5.png' alt='inst')
+                            img(src='./assets/img/inst6.png' alt='inst')
+                        .col-4
+                            img(src='./assets/img/inst7.png' alt='inst')
+                            img(src='./assets/img/inst8.png' alt='inst')
+                            img(src='./assets/img/inst9.png' alt='inst')
+                    a(href='#')
+                        p View more photos
+.footer__copy.text-center.border-top
+    p &copy; 2020 MoGo template by 
         span Laaqiq
-        |  and 
-        a(href="https://otsybulska.github.io/") span Developed by Olena Tsybulska
+        |  and developed by 
+        a(href="https://otsybulska.github.io/")
+            span Olena Tsybulska
