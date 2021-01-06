@@ -3,4 +3,14 @@
         .hero__body.text-center.mx-auto
             h1.hero__title Creative Template
             h2.hero__subtitle Welcome to MoGo
-            a.btn-custom(href='#about') Learn More
+            a.btn-custom(href='#about' type='button' data-toggle='modal' data-target='#exampleModal') Learn More
+        #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLabel.modal-title STORY ABOUT US
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    .modal-footer
+                        button.btn.btn-custom(type='button' data-dismiss='modal') Close

@@ -31,6 +31,14 @@
             background-color: $white;
         }
     }
+
+    .modal {
+        color: $color-text;
+
+        .btn-custom {
+            background-color: $accent;
+        }
+    }
 }
 
 @include m("tp") {
