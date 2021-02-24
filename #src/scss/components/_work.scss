@@ -2,7 +2,7 @@
     .row {
         margin: 0;
     }
-    
+
     .col-sm-3 {
         padding: 0;
     }
@@ -35,7 +35,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 20px;
-        font-weight: 600;
+        line-height: 1.2;
         color: $white;
         transition: all 0.3s ease-in-out;
         opacity: 0;
@@ -48,11 +48,7 @@
         height: 30px;
         width: 30px;
         background-color: $white;
-        mask-image: url(../assets/icons/sprite.svg#user-regular);
-    }
-
-    &__text {
-        line-height: 1.2;
+        mask-image: url("../assets/icons/sprite.svg#user-regular");
     }
 
     &__title {

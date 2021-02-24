@@ -45,19 +45,19 @@
             background-color: $white;
 
             &--1 {
-                mask-image: url(../assets/icons/sprite.svg#twitter-brands);
+                mask-image: url("../assets/icons/sprite.svg#twitter-brands");
             }
 
             &--2 {
-                mask-image: url(../assets/icons/sprite.svg#facebook-f-brands);
+                mask-image: url("../assets/icons/sprite.svg#facebook-f-brands");
             }
 
             &--3 {
-                mask-image: url(../assets/icons/sprite.svg#pinterest-p-brands);
+                mask-image: url("../assets/icons/sprite.svg#pinterest-p-brands");
             }
 
             &--4 {
-                mask-image: url(../assets/icons/sprite.svg#instagram-brands);
+                mask-image: url("../assets/icons/sprite.svg#instagram-brands");
             }
         }
     }

@@ -1,6 +1,6 @@
 .map {
     padding: 60px 0;
-    background: url("../assets/img/map.png") center center no-repeat;
+    background: center center no-repeat;
     @include bg;
     font-family: $font-one;
     font-size: 24px;
@@ -14,7 +14,7 @@
         height: 50px;
         width: 50px;
         background-color: $accent;
-        mask-image: url(../assets/icons/sprite.svg#map-marker-alt-solid);
+        mask-image: url("../assets/icons/sprite.svg#map-marker-alt-solid");
     }
 
     p {

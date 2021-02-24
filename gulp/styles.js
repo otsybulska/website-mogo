@@ -18,7 +18,7 @@ module.exports = function styles() {
             console: true
             }]
         }))
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer({ cascade: false }))
         .pipe(csso({
@@ -26,6 +26,6 @@ module.exports = function styles() {
             debug: true
         }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/styles/'))
 }

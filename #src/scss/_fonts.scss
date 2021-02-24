@@ -1,3 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@include font("KaushanScript", "KaushanScript-Regular", "400", "normal");
+@include font("Montserrat", "Montserrat-Bold", "700", "normal");
+@include font("Montserrat", "Montserrat-Medium", "500", "normal");
+@include font("Montserrat", "Montserrat-Regular", "400", "normal");
+@include font("Roboto", "Roboto-Light", "300", "normal");
+@include font("Roboto", "Roboto-Regular", "400", "normal");

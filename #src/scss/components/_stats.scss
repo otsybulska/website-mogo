@@ -1,6 +1,7 @@
 .stats {
     background: $blue;
     color: $white;
+    font-weight: 700;
     text-transform: uppercase;
 
     .container {
@@ -17,13 +18,11 @@
 
     &__num {
         font-size: 72px;
-        font-weight: 700;
     }
 
     &__text {
         margin: -15px auto 0;
         font-size: 14px;
-        font-weight: 600;
     }
 }
 

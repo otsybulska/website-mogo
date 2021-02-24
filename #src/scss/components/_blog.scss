@@ -51,7 +51,7 @@
             height: 20px;
             width: 20px;
             background-color: $blue;
-            mask-image: url(../assets/icons/sprite.svg#eye-regular);
+            mask-image: url("../assets/icons/sprite.svg#eye-regular");
         }
 
         &__comm {
@@ -60,7 +60,7 @@
             height: 20px;
             width: 20px;
             background-color: $blue;
-            mask-image: url(../assets/icons/sprite.svg#comment-regular);
+            mask-image: url("../assets/icons/sprite.svg#comment-regular");
         }
     }
 }
